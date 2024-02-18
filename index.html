@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chicle&family=Happy+Monkey&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Tourney:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Varela&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Scoreboard</h1>
+    <button id="new-game-btn" onclick="newGame()">New Game</button>
+    <div id="scoreboard">
+      <div class="team" id="homeTeam">
+        <h3 class="teamName">Home</h3>
+        <p id="homeScore" class="score">--</p>
+        <div class="btns">
+          <button onclick="addOneHome()">+1</button>
+          <button onclick="addTwoHome()">+2</button>
+          <button onclick="addThreeHome()">+3</button>
+        </div>
+      </div>
+      <div class="team" id="awayTeam">
+        <h3 class="teamName">Away</h3>
+        <p id="awayScore" class="score">--</p>
+        <div class="btns">
+          <button onclick="addOneAway()">+1</button>
+          <button onclick="addTwoAway()">+2</button>
+          <button onclick="addThreeAway()">+3</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
